@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Сотрудник с максимальной зарплатой : " + maxSalaryEmoloyee(employees));
         System.out.println();
 
-        System.out.println("Среднее значение зарплат " + ovgSalary(employees) + " рублей");
+        System.out.println("Среднее значение зарплат " + avgSalary(employees) + " рублей");
         System.out.println();
 
         printFios(employees);
@@ -74,7 +74,7 @@ public class Main {
         return employee;
     }
 
-    private static int ovgSalary(Employee[] e) {
+    private static int avgSalary(Employee[] e) {
         return sumSalary(e) / e.length;
     }
 

@@ -9,8 +9,7 @@ public class Employee {
     public static int counter = 1;
 
     public Employee(String surname, String name, String patronymic, int department, int salary) {
-        this.id = counter;
-        counter = counter + 1;
+        this.id = counter++;
 
         this.surname = surname;
         this.name = name;
@@ -55,6 +54,9 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "id=" + id + " Ф.И.О. " + surname + " " + name + " " + patronymic + " отдел " + department + " зарплата " + salary + " рублей";
+        return "id=" + id
+                + " Ф.И.О. " + surname + " " + name + " " + patronymic
+                + " отдел " + department
+                + " зарплата " + salary + " рублей";
     }
 }
